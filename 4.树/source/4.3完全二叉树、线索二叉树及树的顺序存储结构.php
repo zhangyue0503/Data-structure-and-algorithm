@@ -65,7 +65,7 @@ function createInThread(TBTNode $root)
 
 createInThread($tree);
 
-var_dump($tree);
+var_dump($tree->rChild->lChild->rChild);exit;
 // object(TBTNode)#1 (5) {
 //     ["data"]=>
 //     string(1) "A"
