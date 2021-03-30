@@ -18,7 +18,6 @@ function SelectSort($numbers){
         if($k != $i){
             list($numbers[$i], $numbers[$k]) = [$numbers[$k], $numbers[$i]];
         }
-        echo implode(', ', $numbers), PHP_EOL;
     }
     echo implode(', ', $numbers), PHP_EOL;
 }
@@ -48,21 +47,4 @@ function BucketSort($numbers){
     echo implode(', ', $sortList), PHP_EOL;
 }
 BucketSort($numbers);
-// 13, 27, 38, 49, 49, 65, 76, 97
-
-function BucketSort2($numbers){
-    $bucketList = [];
-    foreach($numbers as $n){
-        $bucketList[$n]++;
-    }
-    ksort($bucketList);
-    $sortList = [];
-    foreach($bucketList as $k => $v){
-        for( ; $v > 0 ; $v--){
-            $sortList[] = $k;
-        }
-    }
-    echo implode(', ', $sortList), PHP_EOL;
-}
-BucketSort2($numbers);
 // 13, 27, 38, 49, 49, 65, 76, 97
