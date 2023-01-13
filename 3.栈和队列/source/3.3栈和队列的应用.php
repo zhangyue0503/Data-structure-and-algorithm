@@ -42,7 +42,6 @@ var_dump(getIsPlalindrome($string1)); // bool(true)
 var_dump(getIsPlalindrome($string2)); // bool(true)
 var_dump(getIsPlalindrome($string3)); // bool(false)
 
-exit;
 
 function testA()
 {
