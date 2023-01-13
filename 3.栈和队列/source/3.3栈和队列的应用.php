@@ -10,7 +10,7 @@ function getIsPlalindrome($string)
         return false;
     }
     $strlen = strlen($string);
-    $mid = floor($strlen / 2);
+    $mid = (int)floor($strlen / 2);
     $arr = [];
 
     if ($strlen < 2) {
@@ -41,6 +41,8 @@ function getIsPlalindrome($string)
 var_dump(getIsPlalindrome($string1)); // bool(true)
 var_dump(getIsPlalindrome($string2)); // bool(true)
 var_dump(getIsPlalindrome($string3)); // bool(false)
+
+exit;
 
 function testA()
 {
